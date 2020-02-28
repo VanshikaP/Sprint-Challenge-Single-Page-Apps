@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -38,16 +40,34 @@ header h1 {
   text-align: center;
 }
 
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.buttons{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+  /* margin: 0 30px; */
+}
+
 .character-list{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: space-evenly;
+  /* width: 80%; */
   margin: 2% auto;
   align-content: space-between ;
 }
 
 .character{
   margin: 2%;
+  width: 400px;
   box-shadow: 5px 10px 18px lavender;
+  font-family: 'Carter One', cursive;
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import CharacterCard from './CharacterCard'
 
-export default function CharacterList() {
+export default function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
  
@@ -18,6 +18,11 @@ export default function CharacterList() {
       console.log('error in fetching data', error);
     })
   }, []);
+
+  useEffect(() => {
+    let results = characters.filter(char => char.name.toLowerCase().includes(props.searchTerm.toLowerCase()));
+    setCharacters(results);
+  }, [props.searchTerm])
 
   return (
     <section className="character-list">
