@@ -37,3 +37,17 @@ main {
 header h1 {
   text-align: center;
 }
+
+.character-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2% auto;
+  align-content: space-between ;
+}
+
+.character{
+  margin: 2%;
+  box-shadow: 5px 10px 18px lavender;
+}
