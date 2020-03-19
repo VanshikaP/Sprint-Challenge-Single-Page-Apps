@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url('https://media2.giphy.com/media/35nU79vBbeOm4/source.gif');
 }
 
 main {
@@ -9,9 +12,9 @@ main {
   min-height: 80vh;
   max-width: 1024px;
   margin: 35px auto;
-  background: #fff;
-  padding: 15px;
+  background:rgb(255,255,255,0.8);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  padding: 15px;
 }
 
 .grid-view {
@@ -36,4 +39,43 @@ main {
 
 header h1 {
   text-align: center;
+  margin: 20px 0 50px 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.search-form *{
+  margin: 0 10px;
+}
+
+.buttons{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+  /* margin: 0 30px; */
+}
+
+.character-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* width: 80%; */
+  margin: 2% auto;
+  align-content: space-between ;
+}
+
+.character{
+  margin: 2%;
+  width: 400px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  font-family: 'Carter One', cursive;
 }
